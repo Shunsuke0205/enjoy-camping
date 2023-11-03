@@ -25,12 +25,12 @@ https://www.tooplate.com/view/2122-nano-folio
 
 		<section class="tm-about tm-mb-80 tm-p-50 tm-bgcolor-2 tm-border-rounded">
 			<div class="tm-about-header tm-flex-center">
-				<i class="fas fa-users fa-2x"></i>
+				<i class="fas fa-user fa-3x"></i>
 				<h2 style="margin-bottom: 0;">About ME</h2>
 			</div>
 			<div class="tm-about-text">
-				<p class="tm-mb-40">Nano Folio is simple HTML template with a minimal very light-weight custom CSS file. Max content width is 940 pixels. You can easily change the width or any part in this template. Gallery comes with a pop-up image and simple categories.</p>
-				<p class="tm-mb-0">Please support Tooplate website by telling your friends about it. That is going to be very helpful for us. Feel free to <a rel="nofollow" href="https://www.tooplate.com/contact" target="_blank">message us</a> via email or live chat if you have anything to say.</p>
+				<p class="tm-mb-40">I am Shunsuke.</p>
+				<p class="tm-mb-20">I love to go camping with my friends.</p>
 			</div>
 		</section>
 
@@ -142,7 +142,7 @@ https://www.tooplate.com/view/2122-nano-folio
 			</div>
 			<div class="tm-contact-info">
 				<div class="tm-flex">
-					<a href="https://www.youtube.com/@lets_enjoy_camping" class="tm-social-link" target="_blank" rel="noopener noreferrer"><i ></i>YouTube</a>
+					<a id="youtube-link" href="#" class="tm-social-link" target="_blank" rel="noopener noreferrer"><i ></i>YouTube</a>
 					<a href="https://facebook.com" class="tm-social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
 					<a href="https://twitter.com" class="tm-social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
 					<a href="https://www.instagram.com/hiraty_camping/" class="tm-social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
@@ -151,7 +151,7 @@ https://www.tooplate.com/view/2122-nano-folio
 		</section>
 
 		<footer class="tm-footer">
-			Copyright@ Shunsuke HIRATA
+			Copyright 2023 Shunsuke HIRATA
 		</footer>
 	</div>
 
@@ -160,6 +160,14 @@ https://www.tooplate.com/view/2122-nano-folio
 	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script>
+		let youtubeLink = document.getElementById("youtube-link");
+		// スクリーン幅に応じて異なる URL を設定
+		if (window.innerWidth <= 767) {
+			youtubeLink.href = "https://m.youtube.com/@lets_enjoy_camping";
+		} else {
+			youtubeLink.href = "https://www.youtube.com/@lets_enjoy_camping";
+		}
+		
 		$(function(){
 		  	// Init the image gallery
 		  	var $gallery = $(".tm-gallery").isotope({
